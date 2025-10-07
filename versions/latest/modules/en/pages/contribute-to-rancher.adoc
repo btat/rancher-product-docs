@@ -3,7 +3,7 @@
 :revdate: 2025-08-14
 :page-revdate: {revdate}
 
-Learn about the repositories used for Rancher and Rancher docs, how to build Rancher repositories, and what information to include when you file an issue.
+Learn 123 about the repositories used for Rancher and Rancher docs, how to build Rancher repositories, and what information to include when you file an issue.
 
 For more detailed information on how to contribute to the development of Rancher projects, refer to the https://github.com/rancher/rancher/wiki[Rancher Developer Wiki]. The wiki has resources on many topics, including the following:
 
