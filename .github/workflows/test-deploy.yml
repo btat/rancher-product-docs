@@ -12,3 +12,5 @@ permissions:
 jobs:
   test-deploy:
     uses: btat/product-docs-common/.github/workflows/test-deploy-min.yml@wf-test
+    with:
+      token: ${{ github.token }}
