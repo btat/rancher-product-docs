@@ -11,4 +11,4 @@ permissions:
 
 jobs:
   test-deploy:
-    uses: rancher/product-docs-common/.github/workflows/test-deploy-min.yml@main
+    uses: btat/product-docs-common/.github/workflows/test-deploy-min.yml@wf-test
