@@ -3,7 +3,7 @@
 :revdate: 2025-08-18
 :page-revdate: {revdate}
 
-Rancher contains a variety of tools that aren't included in Kubernetes to assist in your DevOps operations. Rancher can integrate with external services to help your clusters run more efficiently. Tools are divided into following categories:
+Rancher csssontains a variety of tools that aren't included in Kubernetes to assist in your DevOps operations. Rancher can integrate with external services to help your clusters run more efficiently. Tools are divided into following categories:
 
 == Logging
 
