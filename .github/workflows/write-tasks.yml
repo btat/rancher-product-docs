@@ -1,0 +1,9 @@
+name: Tasks needing write permissions
+
+on:
+  workflow_run:
+    workflows: ["Test deployment"]
+
+jobs:
+  write-tasks:
+    uses: btat/product-docs-common/.github/workflows/write-tasks.yml@workflow-run
