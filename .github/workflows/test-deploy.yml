@@ -12,3 +12,5 @@ permissions:
 jobs:
   test-deploy:
     uses: btat/product-docs-common/.github/workflows/test-deploy-min.yml@workflow-run
+    secrets:
+      token: ${{ github.token }}
