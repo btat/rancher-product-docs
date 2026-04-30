@@ -36,7 +36,7 @@ jobs:
       - name: Determine base branch
         run: |
           # Extract version from tag (e.g., v2.11.10-alpha1 -> v2.11.10)
-          VERSION=${TAG%%-*}
+          # VERSION=${TAG%%-*}
           echo "111 VERSION: $VERSION"
           echo 'VERSION=${TAG%%-*}' >> $GITHUB_ENV
           echo "222 VERSION: $VERSION"
