@@ -46,7 +46,7 @@ jobs:
 
           if git ls-remote https://github.com/rancher/rancher-product-docs "$VERSION" | grep -q "$VERSION"; then
             echo "333 BASE_BRANCH: $BASE_BRANCH"
-            echo 'BASE_BRANCH="$VERSION"' >> $GITHUB_ENV
+            echo "BASE_BRANCH=$VERSION" >> $GITHUB_ENV
             echo "444 BASE_BRANCH: $BASE_BRANCH"
           fi
 
