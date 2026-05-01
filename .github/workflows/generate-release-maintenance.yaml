@@ -38,7 +38,7 @@ jobs:
           # Extract version from tag (e.g., v2.11.10-alpha1 -> v2.11.10)
           # VERSION=${TAG%%-*}
           echo "111 VERSION: $VERSION"
-          echo 'VERSION="${TAG%%-*}"' >> $GITHUB_ENV
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
           echo "222 VERSION: $VERSION"
 
           if git ls-remote https://github.com/rancher/rancher-product-docs "$VERSION" | grep -q "$VERSION"; then
