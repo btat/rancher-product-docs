@@ -2,7 +2,7 @@
 ifeval::["{build-type}" != "srfa"]
 :page-languages: [en, zh]
 endif::[]
-:revdate: 2026-04-30
+:revdate: 2026-06-02
 :page-revdate: {revdate}
 
 == Current Version
@@ -26,6 +26,12 @@ endif::[]
 | Version | Release Notes | Support Matrix | Prime | Community
 
 // DO NOT EDIT THIS LINE, REQUIRED BY RELEASE SCRIPT. PAST VERSIONS.
+| v2.14.1
+| xref:release-notes/v2.14.1.adoc[View]
+| https://www.suse.com/suse-rancher/support-matrix/all-supported-versions/rancher-v2-14-1/[View]
+| &#10003;
+| &#10003;
+
 | v2.14.0
 | https://github.com/rancher/rancher/releases/tag/v2.14.0[GitHub Release]
 | N/A
