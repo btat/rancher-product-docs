@@ -59,6 +59,7 @@ jobs:
         run: |
           echo "5555 VERSION: $VERSION"
           echo "6666 BASE_BRANCH: $BASE_BRANCH"
+          ls -a
           ./scripts/release-maintenance.sh -t "$TAG" -d "$DATE" --prime "$PRIME" --community "$COMMUNITY"
 
       - name: Create Pull Request
