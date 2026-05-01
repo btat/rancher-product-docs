@@ -37,17 +37,12 @@ jobs:
         run: |
           # Extract version from tag (e.g., v2.11.10-alpha1 -> v2.11.10)
           # VERSION=${TAG%%-*}
-          echo "111 VERSION: $VERSION"
           echo "VERSION=test-branch" >> $GITHUB_ENV
-          echo "222 VERSION: $VERSION"
           VERSION=${TAG%%-*}
           echo "VERSION=$VERSION" >> $GITHUB_ENV
-          echo "333 VERSION: $VERSION"
 
           if git ls-remote https://github.com/rancher/rancher-product-docs "$VERSION" | grep -q "$VERSION"; then
-            echo "333 BASE_BRANCH: $BASE_BRANCH"
             echo "BASE_BRANCH=$VERSION" >> $GITHUB_ENV
-            echo "444 BASE_BRANCH: $BASE_BRANCH"
           fi
 
       - name: Checkout code
@@ -57,9 +52,6 @@ jobs:
 
       - name: Generate Release Maintenance
         run: |
-          echo "5555 VERSION: $VERSION"
-          echo "6666 BASE_BRANCH: $BASE_BRANCH"
-          ls -a
           ./scripts/release-maintenance.sh -t "$TAG" -d "$DATE" --prime "$PRIME" --community "$COMMUNITY"
 
       - name: Create Pull Request
