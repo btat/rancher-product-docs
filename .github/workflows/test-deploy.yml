@@ -22,7 +22,7 @@ jobs:
       fail-fast: false
       matrix:
         playbook: ['playbook-product-local.yml', 'playbook-srfa-local.yml']
-    uses: btat/product-docs-common/.github/workflows/test-deploy-min.yml@c3490a47e499277165506eec22b0ecb30676e821 # main
+    uses: btat/product-docs-common/.github/workflows/test-deploy-min.yml@cc42b4abbef461f4fbc07796828f3865397dda14 # main
     secrets:
       token: ${{ github.token }}
     with:
