@@ -32,5 +32,6 @@ antora:
     enabled: true
   - require: ./product-docs-common/extensions/unpublish-unlisted-pages/unpublish-unlisted-pages.js
     component: 'rancher-manager'
+  - require: '@springio/antora-xref-extension'
 output:
   dir: build/site-product-local
