@@ -17,7 +17,7 @@ Für detailliertere Informationen darüber, wie Sie zur Entwicklung von Rancher-
 
 Im Rancher Users Slack ist der Kanal für Entwickler *#developer*.
 
-[#_rancher_docs]
+[#_rancher_dokumentation]
 == Rancher Dokumentation
 
 Wenn Sie Vorschläge für die Dokumentation auf dieser Website haben, https://github.com/rancher/rancher-docs/issues/new/choose[öffnen] Sie ein Problem im Haupt- https://github.com/rancher/rancher-docs[Rancher docs]-Repository. Dieses Repository enthält Dokumentation für Rancher v2.0 und später.
@@ -80,21 +80,21 @@ Um alle Bibliotheken/Projekte zu sehen, die in Rancher verwendet werden, siehe d
 .Rancher-Komponenten, die zur Bereitstellung/Verwaltung von Kubernetes-Clustern verwendet werden
 image::ranchercomponentsdiagram-2.6.svg[Rancher-Diagramm]
 
-[#_building_rancher_repositories]
+[#_rancher_repositories_erstellen]
 === Rancher-Repositories erstellen
 
 Jedes Repository sollte ein Makefile haben und kann mit dem `make` Befehl erstellt werden. Die `make` Ziele basieren auf den Skripten im `/scripts` Verzeichnis des Repositories, und jedes Ziel wird https://github.com/rancher/dapper[Dapper] verwenden, um das Ziel in einer isolierten Umgebung auszuführen. Das `Dockerfile.dapper` wird für diesen Prozess verwendet und enthält alle notwendigen Build-Tools.
 
 Das Standardziel ist `ci` und wird `./scripts/validate`, `./scripts/build`, `./scripts/test` und `./scripts/package` ausführen. Die resultierenden Binärdateien des Builds befinden sich in `./build/bin` und werden normalerweise auch in einem Docker-Image verpackt.
 
-[#_rancher_bugs_issues_or_questions]
+[#_rancher_fehler_probleme_oder_fragen]
 === Rancher-Fehler, -Probleme oder -Fragen
 
 Wenn Sie Fehler finden oder Probleme haben, suchen Sie bitte nach dem https://github.com/rancher/rancher/issues[gemeldeten Problem], da jemand möglicherweise dasselbe Problem erlebt hat oder wir aktiv an einer Lösung arbeiten.
 
 Wenn Sie nichts finden können, das mit Ihrem Problem zusammenhängt, kontaktieren Sie uns, indem Sie https://github.com/rancher/rancher/issues/new[ein Problem melden]. Obwohl wir viele Repositories im Zusammenhang mit Rancher haben, möchten wir, dass die Fehler im Rancher-Repository gemeldet werden, damit wir sie nicht übersehen! Wenn Sie eine Frage stellen oder andere Benutzer zu einem Anwendungsfall fragen möchten, empfehlen wir, einen Beitrag in den https://forums.rancher.com[Rancher Foren] zu erstellen.
 
-[#_checklist_for_filing_issues]
+[#_checkliste_für_die_meldung_von_problemen]
 ==== Checkliste für die Meldung von Problemen
 
 Bitte folgen Sie dieser Checkliste, wenn Sie ein Problem melden, da sie uns hilft, das Problem zu untersuchen und zu beheben. Mehr Informationen bedeuten mehr Daten, die wir verwenden können, um zu bestimmen, was das Problem verursacht oder was möglicherweise mit dem Problem zusammenhängt.

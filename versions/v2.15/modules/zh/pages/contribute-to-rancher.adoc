@@ -17,7 +17,7 @@
 
 在Rancher用户Slack中，开发者的频道是*#developer*。
 
-[#_rancher_docs]
+[#_rancher文档]
 == Rancher文档
 
 如果您对本网站的文档有建议，请 https://github.com/rancher/rancher-docs/issues/new/choose[打开]一个主要 https://github.com/rancher/rancher-docs[Rancher文档]储存库中的问题。该储存库包含Rancher v2.0及更高版本的文档。
@@ -26,7 +26,7 @@
 
 有关描述Rancher v1.6及更早版本的文档，请参见 https://github.com/rancher/rancher.github.io[Rancher 1.x文档]储存库，其中包含 https://rancher.com/docs/rancher/v1.6/en/.的源文件。
 
-[#_rancher_repositories]
+[#_rancher储存库]
 == Rancher储存库
 
 所有储存库都位于我们的主要GitHub组织内。有许多用于Rancher的储存库，但我们将提供一些主要用于Rancher的储存库的描述。
@@ -80,21 +80,21 @@
 .用于配置/管理 Kubernetes 集群的 Rancher 组件
 image::ranchercomponentsdiagram-2.6.svg[Rancher 图示]
 
-[#_building_rancher_repositories]
+[#_构建_rancher_储存库]
 === 构建 Rancher 储存库
 
 每个储存库都应该有一个 Makefile，并可以使用 `make` 命令构建。`make` 目标基于储存库中 `/scripts` 目录中的脚本，每个目标将使用 https://github.com/rancher/dapper[Dapper] 在隔离环境中运行。此过程将使用 `Dockerfile.dapper`，并包括所有必要的构建工具。
 
 默认目标是 `ci`，将运行 `./scripts/validate`、`./scripts/build`、`./scripts/test` 和 `./scripts/package`。构建的结果二进制文件将位于 `./build/bin` 中，通常也会打包在 Docker 镜像中。
 
-[#_rancher_bugs_issues_or_questions]
+[#_rancher_错误问题或疑问]
 === Rancher 错误、问题或疑问
 
 如果您发现任何错误或遇到任何问题，请搜索 https://github.com/rancher/rancher/issues[报告的问题]，因为可能有人遇到过相同的问题，或者我们正在积极寻找解决方案。
 
 如果您找不到与您的问题相关的内容，请通过 https://github.com/rancher/rancher/issues/new[提交问题] 联系我们。尽管我们有许多与 Rancher 相关的储存库，但我们希望在 Rancher 储存库中提交错误，以免错过它们！如果您想问一个问题或询问其他用户关于用例的情况，我们建议在 https://forums.rancher.com[Rancher 论坛] 上创建一个帖子。
 
-[#_checklist_for_filing_issues]
+[#_提交问题的检查清单]
 ==== 提交问题的检查清单
 
 请在提交问题时遵循此检查清单，这将帮助我们调查和修复问题。更多信息意味着我们可以使用更多数据来确定问题的原因或可能与问题相关的内容。
