@@ -2,6 +2,8 @@
 name: Release Maintenance Task Checklist
 about: Track tasks that need to be done every release.
 title: '<VERSION> - Rancher Manager Release Maintenance Task Checklist'
+type: Task
+labels: release
 ---
 
 This issue is to track tasks that need to be done every release regardless of whether the release has new feature content or not.
